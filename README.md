@@ -25,3 +25,10 @@ Esta es una aplicación móvil y de escritorio desarrollada con **.NET MAUI** pa
 
 ---
 *Desarrollado como práctica grupal para la gestión de publicaciones.*
+
+
+# Autores
+
+- [Víctor García Crespo](https://github.com/vgarciacrespo)
+- [David Sanz Olalla](https://github.com/dsanzolalla)
+- [David Naranjo Osorio]
