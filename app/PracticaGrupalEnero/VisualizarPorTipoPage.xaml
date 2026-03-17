@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.VisualizarPorTipoPage"
+             Title="VisualizarPorTipoPage">
+    <VerticalStackLayout>
+        <Label Text="Listado de Publicaciones" Margin="20,10" FontSize="30" />
+        
+                <ListView x:Name="PublicacionesListView" HeightRequest="6000" Margin="5" HasUnevenRows="True"> 
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding TituloPublicacion}" 
+                                        FontSize="20" 
+                                        FontAttributes="Bold" 
+                                        />
+                                    <Label Text="{Binding Tipo}" 
+                                        FontSize="16" 
+                                         />
+                                    <Label Text="{Binding FechaPublicacion, StringFormat='Fecha: {0:yyyy-MM-dd}'}" 
+                                        FontSize="16" 
+                                        />
+                                    <Label Text="{Binding Estado}" 
+                                        FontSize="16" 
+                                        />
+                                    <Label Text="{Binding AutoresString, StringFormat='Autores: {0}'}" 
+                                        FontSize="16" 
+                                         />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+      </VerticalStackLayout>
+</ContentPage>

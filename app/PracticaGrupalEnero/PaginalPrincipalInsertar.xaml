@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.PaginalPrincipalInsertar"
+             Title="PaginalPrincipalInsertar">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+
+            <Label Text="Gestión de Publicaciones Científicas"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Seleccione una funcionalidad para continuar:"
+                   FontSize="16"
+                   HorizontalOptions="Center" />
+            <Button Text="Agregar Publicación"
+                    Clicked="OnAgregarPublicacionClicked" />
+                    
+              <Button Text="Agregar Autor"
+                    Clicked="OnAgregarAutorClicked" />
+
+            <Button Text="Listar Publicaciones"
+                    Clicked="OnListarPublicacionesClicked" />
+
+            <Button Text="Buscar por Tipo"
+                    Clicked="OnBuscarPorTipoClicked" />
+         <Button Text="Modificar Estado"
+                    Clicked="OnModificarEstadoClicked"/>
+
+            <Button Text="Buscar por Autor"
+                 Clicked="OnBuscarPorAutorClicked" />
+        
+            <Button Text="Eliminar Publicación"
+                    Clicked="OnEliminarPublicacionClicked" />
+                    
+        </VerticalStackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.EliminarPublicacionPage"
+             Title="EliminarPublicacionPage">
+    <VerticalStackLayout Margin="20" Spacing="40">
+        <Label 
+            Text="Selecciona la Publicación a Eliminar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"/>
+        <Entry Placeholder="Introduce el titulo de la publicacion" x:Name="IntroducirTitulo" BackgroundColor="#FFCDE5FA" PlaceholderColor="#FF787167"></Entry>
+        <Button Text="Eliminar Publicacion" Clicked="OnEliminarPorTituloClicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

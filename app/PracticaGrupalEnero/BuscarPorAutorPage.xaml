@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.BuscarPorAutorPage"
+             Title="BuscarPorAutorPage">
+    <VerticalStackLayout>
+        <Label Text="Introduce el Nombre y Apellidos del Autor" Margin="20" FontSize="18"></Label>
+        <Entry Margin="20,0" x:Name="NombreAutor" Placeholder="Introduce Nombre y Apellidos" PlaceholderColor="#FF787167" BackgroundColor="#FFCDE5FA"/>
+
+        <Button Text="Mostrar Publicaciones" Margin="20" Clicked="OnClickedMostrarPublicaciones"  />
+    </VerticalStackLayout>
+</ContentPage>

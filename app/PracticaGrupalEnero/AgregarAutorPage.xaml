@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.AgregarAutorPage"
+             Title="AgregarAutorPage">
+    <VerticalStackLayout>
+        <Label Text="Introduce el Nombre y Apellidos del Autor" Margin="20" FontSize="18"></Label>
+        <Entry Margin="20,0" x:Name="NombreAutor" Placeholder="Introduce Nombre y Apellidos" BackgroundColor="#FFCDE5FA" PlaceholderColor="#FF787167"/>
+        <Label Text="Cual es el ID de la publicacion que quieres buscar"  Margin="20 "></Label>
+        <Entry  x:Name="IDPublicacion" Margin="20,0" Placeholder="Introduce ID" BackgroundColor="#FFCDE5FA" PlaceholderColor="#FF787167"></Entry>
+
+        <Button Text="Agregar Autor" Margin="20" Clicked="OnClickedAgregarAutor" />
+    </VerticalStackLayout>
+
+        
+</ContentPage>

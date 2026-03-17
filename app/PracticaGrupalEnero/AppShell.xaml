@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PracticaGrupalEnero.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PracticaGrupalEnero"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PracticaGrupalEnero">
+
+    <FlyoutItem Title="Inicio" Icon="home.png">
+        <ShellContent Title="Inicio" ContentTemplate="{DataTemplate local:PaginalPrincipalInsertar}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Funcionalidades">
+        <ShellContent Title="Agregar Publicación" ContentTemplate="{DataTemplate local:AgregarPublicacionPage}" />
+        <ShellContent Title="Agregar Autor" ContentTemplate="{DataTemplate local:AgregarAutorPage}" />
+        <ShellContent Title="Listar Publicaciones" ContentTemplate="{DataTemplate local:ListarPublicacionesPage}" />
+         
+        <ShellContent Title="Buscar por Tipo" ContentTemplate="{DataTemplate local:BuscarPorTipoPage}" />
+         <ShellContent Title="Modificar Estado" ContentTemplate="{DataTemplate local:ModificarEstadoPage}" />
+        <ShellContent Title="Buscar por Autor" ContentTemplate="{DataTemplate local:BuscarPorAutorPage}" />
+        
+        <ShellContent Title="Eliminar Publicación" ContentTemplate="{DataTemplate local:EliminarPublicacionPage}" />
+        
+    </FlyoutItem>
+
+
+</Shell>

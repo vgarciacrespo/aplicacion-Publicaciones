@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.BuscarPorTipoPage"
+             Title="BuscarPorTipoPage">
+    <VerticalStackLayout Margin="20" >
+        <Label Text="Selecciona el tipo de publicación" FontSize="20" HorizontalTextAlignment="Center" ></Label>
+        <Picker Margin="20" x:Name="PickerTipo" BackgroundColor="#FFCDE5FA" >
+            <Picker.Items>
+                    <x:String>LIBRO_COMPLETO</x:String>
+                    <x:String>CAPITULO_LIBRO</x:String>
+                    <x:String>ARTICULO_REVISTA</x:String>
+                    <x:String>CONGRESO</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Margin ="20" Clicked="OnClickedButonVisualizar" Text="Visualizar" />
+    </VerticalStackLayout>
+</ContentPage>

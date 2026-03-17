@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.AgregarPublicacionPage"
+             Title="AgregarPublicacionPage">
+    
+     <VerticalStackLayout Padding="20">
+        <Label Text="Agregar Publicación" FontSize="24" HorizontalOptions="Center" />
+        <StackLayout Margin="0,20,0,20">
+            <Label Text="ID" Margin="10" FontSize="17"></Label>
+             <Entry x:Name="PonerID" Placeholder="Introduce ID" BackgroundColor="#FFCDE5FA" PlaceholderColor="#FF787167"/>
+
+            <Label Text="Titulo Publicacion" Margin="10" FontSize="19"></Label>
+            <Entry x:Name="TitPublicacion" Placeholder="Introduce el titulo publicacion" BackgroundColor="#FFCDE5FA" PlaceholderColor="#FF787167"></Entry>
+
+            <Label Text="Fecha Publicacion" Margin="10" FontSize="17"></Label>
+            <DatePicker x:Name="FechaPublicacionPicker"
+                        Format="D"  BackgroundColor="#FFCDE5FA"/>
+            <Label Text="Selecciona tipo de publicacion" Margin="10" FontSize="17"></Label>
+
+            <Picker x:Name="PickerTipoPublicacion" BackgroundColor="#FFCDE5FA" >
+                <Picker.Items>
+                    <x:String>LIBRO_COMPLETO</x:String>
+                    <x:String>CAPITULO_LIBRO</x:String>
+                    <x:String>ARTICULO_REVISTA</x:String>
+                    <x:String>CONGRESO</x:String>
+                </Picker.Items>
+            </Picker>
+             <Label Text="Selecciona estado de la publicacion" Margin="10" FontSize="17"></Label>
+             <Picker x:Name="PickerEstadoPublicacion" BackgroundColor="#FFCDE5FA">
+                <Picker.Items>
+                    <x:String>REVISION</x:String>
+                    <x:String>ACEPTADO</x:String>
+                    <x:String>RECHAZADO</x:String>
+                </Picker.Items>
+            </Picker>
+
+        </StackLayout>
+        
+
+        <Button Clicked="OnClickedButonSubir" Text="Subir" />
+    </VerticalStackLayout>
+        
+</ContentPage>

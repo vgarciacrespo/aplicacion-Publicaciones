@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.ModificarEstadoPage"
+             Title="ModificarEstadoPage">
+    <VerticalStackLayout>
+         <Label Text="Selecciona la publicación a modificar" Margin="20" FontSize="20" ></Label>
+         <Label x:Name="SeleccionarDatos" Text="Escoger por ID" HorizontalOptions="Center" FontSize="20" Margin="20"></Label> 
+        <Switch x:Name="SeleccionarDatosSwitch" Toggled="OnSwitchSeleccionarDatos" IsToggled="False"  HorizontalOptions="Center"  BackgroundColor="Azure"></Switch>
+
+        <Entry x:Name="IntroduceDatos" Placeholder="Introduce los datos" Margin="20" HeightRequest="40" BackgroundColor="#FFCDE5FA"  PlaceholderColor="#FF787167"></Entry>
+        <Label Text="Selecciona el estado a cambiar" Margin="20,0"></Label>
+         <Picker x:Name="PickerEstadoPublicacion" BackgroundColor="#FFCDE5FA" Margin="20"  >
+                <Picker.Items>
+                    <x:String>REVISION</x:String>
+                    <x:String>ACEPTADO</x:String>
+                    <x:String>RECHAZADO</x:String>
+                </Picker.Items>
+            </Picker>
+        <Button Clicked="OnClickedButtonModificar" Margin="10" Text="Modificar" BackgroundColor="Blue"></Button>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

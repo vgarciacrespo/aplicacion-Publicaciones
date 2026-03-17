@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaGrupalEnero.DetallePublicacionPage"
+             Title="DetallePublicacionPage">
+    <VerticalStackLayout>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Detalles de la Publicación" FontSize="24" FontAttributes="Bold" />
+            <Label x:Name="ID" FontSize="18" />
+            <Label x:Name="TituloPublicacionMostrar" FontSize="18" />
+            <Label x:Name="TipoPublicacionMostar" FontSize="18" />
+            <Label x:Name="EstadoPublicacionMostrar" FontSize="18" />
+            <Label x:Name="FechaPublicacionMostrar" FontSize="18" />
+            <Label x:Name="AutoresMostar" FontSize="18" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
